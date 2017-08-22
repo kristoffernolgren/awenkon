@@ -59,12 +59,10 @@
 				<div class="col-md-8">
 					<div class="navmenu"style="text-align: center;">
 						<ul id="menu">
-							<li class="active" ><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#project">Projects</a></li>
-							<li><a href="#news">News</a></li>
-							<li class="last"><a href="#contact">Contact</a></li>
-							<!--li><a href="#features">Features</a></li-->
+							<li class="active" ><a href="#home">Hem</a></li>
+							<li><a href="#about">Våra tjänster</a></li>
+							<li><a href="#wwa">Om oss</a></li>
+							<li class="last"><a href="#contact">Kontakt</a></li>
 						</ul>
 					</div>
 				</div>
@@ -141,7 +139,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+	</div>
+	<div id="wwa">
+		<div  class="container">
 			<div class="row">
 				<div class="col-md-12 wwa">
 					<span name="about" ></span>
@@ -168,13 +168,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 hr1">
-					<hr/>
-				</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 hr1">
+				<hr/>
 			</div>
 		</div>
+	</div>
     <!--contact start-->
 
     <div id="contact">
@@ -322,10 +323,12 @@
 			var winTop      =   $(window).scrollTop();
 			var rangeTop    =   200;
 			var rangeBottom =   500;
-			$('.navmenu').find('a').each(function(){
+			$('.navmenu').find('a').each(function(e){
 				contentTop.push( $( $(this).attr('href') ).offset().top );
+				console.log( $( $(this).attr('href') ).offset().top,  $( $(this).attr('href') ).height())
 				contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
 			})
+			console.log()
 			$.each( contentTop, function(i){
 				if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
 					$('.navmenu li')
@@ -333,6 +336,7 @@
 					.eq(i).addClass('active');
 				}
 			})
+			console.log('')
 		};
 
 		$(document).ready(function(){
