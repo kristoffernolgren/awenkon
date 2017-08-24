@@ -249,9 +249,9 @@ border: none;
 		text-align: justify;
 	}
 	.Ama {
-	margin-top: 280px !important;
-	margin-bottom: 100px !important;
-}
+		margin-top: 280px !important;
+		margin-bottom: 100px !important;
+	}
 	.soc ul li{
 		margin-bottom: 20px;
 	}
@@ -470,6 +470,10 @@ border: none;
 	color: #fff;
 	font-family: FontAwesome;
 	text-align: center;
+}
+.fa-paper-plane:before{
+    position: relative;
+    right: 1px;
 }
 
 .fa-male{
