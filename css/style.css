@@ -30,22 +30,8 @@ a:hover{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-.headerLine:after{
-	content: "";
-	position: absolute;
-	z-index: 1;
-	pointer-events: none;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	/* background: url(../images/sliderL.png) center center no-repeat; */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-bottom: 150px solid white;
-	border-left: 3000px solid transparent;
+	clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+
 }
 
 .logo{
@@ -357,7 +343,7 @@ border: none;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+	clip-path: polygon(0% 5vw, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
 }
 
 
