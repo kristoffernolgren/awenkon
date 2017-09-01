@@ -40,7 +40,7 @@ a:hover{
 	position: absolute;
 	background: url(../images/texture_tile.jpg);
 	mix-blend-mode: multiply;
-	opacity: .7;
+	opacity: .3;
     z-index: 2;
 }
 
