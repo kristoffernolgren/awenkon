@@ -62,10 +62,13 @@ a:hover{
     background-size: contain;
 }
 
+.fixed {
+	z-index: initial;
+}
+
 .fixed .logo a{
     background: url(../images/logo.svg) no-repeat;
     height: 46px;
-
 }
 .logoimg{
 	height:74px
