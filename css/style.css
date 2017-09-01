@@ -62,9 +62,6 @@ a:hover{
     background-size: contain;
 }
 
-.fixed {
-	z-index: initial;
-}
 
 .fixed .logo a{
     background: url(../images/logo.svg) no-repeat;
@@ -822,7 +819,7 @@ textarea {
 	font-family: 'Source Sans Pro', 'sans-serif';
 	font-weight: 700;
 	font-size:13px;
-	color:#fff;
+	color:inherit;
 }
 
 .forma .cBtn ul{
@@ -840,7 +837,6 @@ textarea {
 	padding: 10px;
 	padding-right: 17px;
 	padding-left: 17px
-
 }
 .forma .cBtn .clear  a, .cBtn .send a{
 	font-family: 'Source Sans Pro', 'sans-serif';
@@ -849,11 +845,12 @@ textarea {
 .forma .cBtn .send{
 	cursor: pointer;
 	box-shadow: none;
-	background:#84BD00 ;
+	background: white;
+	color:#84BD00 ;
 }
 .forma .cBtn .send:hover{
-	background:#658D1B;
-	box-shadow: none ;
+	background:#84BD00;
+	color: white;
 }
 
 /**/
@@ -1270,6 +1267,7 @@ textarea {
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%);
+		z-index: 1;
 	}
     .fixed {
 		transition-duration: 1s;
