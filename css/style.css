@@ -476,6 +476,7 @@ border: none;
 }
 .team img{
 	margin:0 auto;
+	border-radius: 100px
 }
 .team h4{
 	margin-top: 24px;
@@ -513,6 +514,7 @@ border: none;
 	font-family: FontAwesome;
 	font-size:15px;
 }
+
 /**/
 .hr1{
 	margin-top: 34px;
