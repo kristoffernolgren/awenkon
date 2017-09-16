@@ -188,12 +188,12 @@
 					</div>
 					<div class="col-md-9 col-xs-12 forma">
 					<form>
-						<input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Namn'/>
-						<input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='E-post'/>
-						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Meddelande'></textarea>
+						<input id="subject" type="text" class="col-md-6 col-xs-12 name" name='subject' placeholder='Ämne'/>
+						<input type="text" id="email" class="col-md-6 col-xs-12 Email" name='Email' placeholder='E-post'/>
+						<textarea type="text" id="message" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Meddelande'></textarea>
 						<div class="cBtn col-xs-12">
 							<ul>
-								<li class="send"><a href="#"><i class="fa fa-share"></i>Skicka meddelande</a></li>
+								<li class="send"><a id="send" href="#"><i class="fa fa-share"></i>Skicka meddelande</a></li>
 							</ul>
 						</div>
 					</form>
@@ -210,9 +210,9 @@
 			</div>
 		</div>
     </div>
-	<div class="line6">
+	<!--div class="line6">
 		<iframe width="100%" height="750" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&amp;center=57.7577%2C16.6370&amp;key=AIzaSyDZJU4ycqMhX-K0lwGGYqmJQQLMFjYsIY4" allowfullscreen></iframe>
-	</div>
+	</div-->
 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
@@ -274,11 +274,18 @@
 			})
 		};
 
+		function send() {
+			setTimeout(function() {
+			window.open("mailto:" + $('#email').val() + "?subject=" + $('#subject').val() + "&body=" + $('#message').val());
+			}, 320);
+		}
+
 		$(document).ready(function(){
 			calculateScroll();
 			$(window).scroll(function(event) {
 				calculateScroll();
 			});
+			$('#send').click(send)
 			$('.navmenu ul li a').click(function() {
 				$('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
 				return false;

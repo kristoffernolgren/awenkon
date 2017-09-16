@@ -38,6 +38,7 @@ a:hover{
 	height: 100%;
 	width: 100%;
 	position: absolute;
+	pointer-events: none;
 	background: url(../images/texture_tile.jpg);
 	mix-blend-mode: multiply;
 	opacity: .3;
@@ -758,7 +759,8 @@ border: none;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	clip-path: polygon(0% 5vw, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+/* 	clip-path: polygon(0% 5vw, 0% 100%, 100% calc(100% - 5vw), 100% 0%);*/
+	clip-path: polygon(0% 5vw, 0% 100%, 100% 100%, 100% 0%);
 	top: 5vw;
 }
 
