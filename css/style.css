@@ -1266,27 +1266,32 @@ textarea {
 		height:350px;
 	}
 }
-	.default{
-		transition-duration: 1s;
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%);
-		z-index: 1;
-	}
-    .fixed {
-		transition-duration: 1s;
-		/*text-align:center;*/
-		z-index:999;
-        position:fixed;
-        top: -65px;
-        padding:20px 0;
-        width:100%;
-		background-color: white!important;
-    }
-    .fixed .logoimg{
-    	height: auto;
-    }
+.employ{
+    width: 182px;
+    height: auto;
+    position: relative;
+    float: right;
+    top: -120px;
+}
 
-/**/
-
+.default{
+	transition-duration: 1s;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 1;
+}
+.fixed {
+	transition-duration: 1s;
+	/*text-align:center;*/
+	z-index:999;
+    position:fixed;
+    top: -65px;
+    padding:20px 0;
+    width:100%;
+	background-color: white!important;
+}
+.fixed .logoimg{
+	height: auto;
+}
 
