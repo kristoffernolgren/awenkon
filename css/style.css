@@ -45,6 +45,12 @@ a:hover{
     z-index: 2;
 }
 
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.headerLine:before{
+		background: none;
+	}
+}
+
 .logo{
 	margin-top: 60px;
 	font-family: 'Source Sans Pro', 'sans-serif';
