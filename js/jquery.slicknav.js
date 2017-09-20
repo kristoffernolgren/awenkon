@@ -71,7 +71,7 @@
 		// create menu bar
 		$this.mobileNav.attr('class', prefix+'_nav');
 		var menuBar = $('<div class="'+prefix+'_menu"></div>');
-		$this.btn = $('<'+settings.parentTag+' aria-haspopup="true" tabindex="0" class="'+prefix+'_btn '+prefix+'_collapsed"><span class="'+prefix+'_menutxt">'+settings.label+'</span><span class="'+iconClass+'"><span class="'+prefix+'_icon-bar"></span><span class="'+prefix+'_icon-bar"></span><span class="'+prefix+'_icon-bar"></span></span></a>');
+		$this.btn = $('<'+settings.parentTag+' aria-haspopup="true" tabindex="0" class="'+prefix+'_btn '+prefix+'_collapsed"><span class="'+prefix+'_menutxt">'+settings.label+'</span></a>');
 		$(menuBar).append($this.btn);
 		$(settings.prependTo).prepend(menuBar);
 		menuBar.append($this.mobileNav);

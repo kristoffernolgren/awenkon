@@ -50,6 +50,11 @@ a:hover{
 		background: none;
 	}
 }
+@supports (-ms-ime-align: auto) {
+	.headerLine:before{
+		background: none;
+	}
+}
 
 .logo{
 	margin-top: 60px;
